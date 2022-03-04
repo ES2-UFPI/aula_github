@@ -9,7 +9,7 @@ public class Menu {
 	private List<String> options;
 
 	public Menu(List<String> options) {
-		this.title = "Menu";
+		this.title = "Meu menu";
 		this.options = options;
 	}
 
