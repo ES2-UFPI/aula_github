@@ -34,4 +34,16 @@ public class Banco {
             }
         }
     }
+
+    public void removerConta(int numero) {
+        Iterator<Conta> contaIterator = this.contas.iterator();
+
+        while (contaIterator.hasNext()) {
+            Conta c = contaIterator.next();
+
+            if (c.getNumero() == numero) {
+                contas.remove(c);
+            }
+        }
+    }
 }
