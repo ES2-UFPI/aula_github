@@ -8,8 +8,8 @@ public class Cliente {
     public String getName(){
         return this.nome;
     }
-    
-    public void setNone(String nome){
+
+    public void setNome(String nome){
         this.nome = nome;
     }
 }
