@@ -13,12 +13,19 @@ public class Banco {
     public void atualizarCliente(String nomeAntigo, String nomeNovo) {
         Iterator<Cliente> clienteIterator = this.clientes.iterator();
         while (clienteIterator.hasNext()) {
-            Cliente c = clienteIterator.next();
-            if (c.getName().equals(nomeAntigo)) {
-                c.setNome(nomeNovo);
+            if (clienteIterator.next().getName().equals(nomeAntigo)) {
+                clienteIterator.next().setNome(nomeNovo);
                 break;
             }
         }
+    }
+
+    public void excluirCliente(String cpf){
+        for (int i = 0; i < this.clientes.size(); i++) {
+            if(this.clientes.get(i).getCpf() == cpf){
+                this.clientes.remove(i);
+            }
+          }
     }
 
     public void criarConta(int numero, String cpf) {
