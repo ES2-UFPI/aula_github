@@ -7,7 +7,7 @@ public class Transacoes {
     public Transacoes(String cliente1, String cliente2, Integer valor) {
         this.valor = valor;
         this.cliente1 = cliente1;
-        this.cliente2 = cliente2
+        this.cliente2 = cliente2;
     }
     public Update(String cliente1, String cliente2, Integer valor) {
        this.valor = valor;
@@ -18,6 +18,10 @@ public class Transacoes {
     public Create(String cliente1, String cliente2, Integer valor) {
        this.valor = valor;
         this.cliente1 = cliente1;
-        this.cliente2 = cliente2
+        this.cliente2 = cliente2;
      }
-}
+    public  excluirCliente(String cliente1, String cliente2){
+        this.valor = 0;
+        this.cliente1 = '';
+        this.cliente2 = '';
+    }}
