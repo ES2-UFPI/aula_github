@@ -14,5 +14,10 @@ public class Transacoes {
         this.cliente1 = cliente1;
         this.cliente2 = cliente2
             }
-
+   
+    public Create(String cliente1, String cliente2, Integer valor) {
+       this.valor = valor;
+        this.cliente1 = cliente1;
+        this.cliente2 = cliente2
+     }
 }
