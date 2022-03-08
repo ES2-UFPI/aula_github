@@ -1,0 +1,13 @@
+public class Transacoes {
+    private String valor;
+    private String cliente1;
+    private String cliente2;
+
+
+    public Transacoes(String cliente1, String cliente2, Integer valor) {
+        this.valor = valor;
+        this.cliente1 = cliente1;
+        this.cliente2 = cliente2
+    }
+
+}
